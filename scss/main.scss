@@ -12,7 +12,19 @@ body{
 
 *{
     color: $sub-color;
+}
 
+// ######### section heading ##########
+
+.sec__head{    
+    color: $tertiary-color;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -ms-border-radius: 10px ;
+    -o-border-radius: 10px ;
 }
 
 // ==== background animation ======
@@ -354,17 +366,6 @@ nav{
     height: 92vh !important;
     margin-bottom: 5rem ;        
 
-    &__head{    
-        color: $tertiary-color;
-        font-weight: 700;
-        letter-spacing: 2px;
-        border-radius: 10px ;
-        -webkit-border-radius: 10px ;
-        -moz-border-radius: 10px ;
-        -ms-border-radius: 10px ;
-        -o-border-radius: 10px ;
-    }
-
     &__p{
         height: 25rem;
         width: 30rem;
@@ -402,6 +403,59 @@ nav{
         -o-border-radius: 10px;
     }
 }
+
+//######### PROJECTS #########
+
+.projects{
+    height: 100%;
+    &__img{
+        position: relative;
+        top: -2rem;
+        width: 100%;
+        height: 25rem;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+    }
+
+    &__container{
+        width: 20rem;
+        height: 20rem;
+        border: 2px solid $sub-color;
+
+        .projects__icons{
+           font-size: 28px;
+           display: flex;
+           justify-content: space-evenly;
+        }
+
+    }
+    
+    &__container{
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+}
+
+    &__cont__p{
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    &__container{
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+}
+
+
 
 // =======CONTACT ME ==========
 
