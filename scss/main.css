@@ -570,8 +570,43 @@ nav a:hover {
   -o-border-radius: 10px;
 }
 
-.projects {
+.projects__demo {
+  display: none;
+  z-index: +1;
+  position: fixed;
+  width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.projects__demo .container {
+  width: 90%;
+  height: 80%;
+  transform: translate(2%, 20%);
+  -webkit-transform: translate(2%, 20%);
+  -moz-transform: translate(2%, 20%);
+  -ms-transform: translate(2%, 20%);
+  -o-transform: translate(2%, 20%);
+}
+
+.projects__demo button {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.projects__demo button i {
+  font-size: 20px;
+}
+
+.projects__demo video {
+  z-index: +10;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.projects {
+  height: 100vh;
 }
 
 .projects__img {
@@ -589,17 +624,38 @@ nav a:hover {
 .projects__container {
   width: 20rem;
   height: 20rem;
-  border: 2px solid #b2b1b9;
+  border: 1px solid #b2b1b9;
+  overflow: hidden;
+}
+
+.projects__container button {
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .projects__container .projects__icons {
-  font-size: 28px;
+  position: relative;
+  left: 20rem;
+  font-size: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  transition: 500ms;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+}
+
+.projects__container:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.projects__container:hover .projects__icons {
+  left: 0;
 }
 
 .projects__container {
@@ -612,7 +668,7 @@ nav a:hover {
 
 .projects__cont__p {
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .projects__container {

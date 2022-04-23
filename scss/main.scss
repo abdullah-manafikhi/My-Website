@@ -406,8 +406,45 @@ nav{
 
 //######### PROJECTS #########
 
+.projects__demo{
+    display: none;
+    z-index: +1;
+    position: fixed;
+    width: 100%;
+    height: 100% ;
+    background-color: rgba($color: #000000, $alpha: .4);
+
+    .container{
+        width: 90%;
+        height: 80%;
+        transform: translate(2% , 20%);
+        -webkit-transform: translate(2% , 20%);
+        -moz-transform: translate(2% , 20%);
+        -ms-transform: translate(2% , 20%);
+        -o-transform: translate(2% , 20%);
+    }
+
+    button{
+        background-color: transparent   ;
+        border-color: transparent;
+
+        i{
+            font-size: 20px;
+        }
+    }
+
+    video{
+        z-index: +10;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+
 .projects{
-    height: 100%;
+    height: 100vh;
+
     &__img{
         position: relative;
         top: -2rem;
@@ -423,12 +460,32 @@ nav{
     &__container{
         width: 20rem;
         height: 20rem;
-        border: 2px solid $sub-color;
+        border: 1px solid $sub-color;
+        overflow: hidden;
+
+        button{
+            background-color: transparent;
+            border-color: transparent;
+        }
 
         .projects__icons{
-           font-size: 28px;
-           display: flex;
-           justify-content: space-evenly;
+            position: relative;
+            left: 20rem;
+            font-size: 35px;
+            display: flex;
+            justify-content: space-evenly;
+            transition: 500ms;
+            -webkit-transition: 500ms;
+            -moz-transition: 500ms;
+            -ms-transition: 500ms;
+            -o-transition: 500ms;
+        }
+
+        &:hover{
+            background: rgba($color: #000000, $alpha: .25);
+            .projects__icons{
+                left: 0;
+            }
         }
 
     }
@@ -443,7 +500,7 @@ nav{
 
     &__cont__p{
         font-size: 22px;
-        font-weight: 700;
+        font-weight: 400;
     }
 
     &__container{
