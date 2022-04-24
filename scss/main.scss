@@ -1,4 +1,5 @@
 @import 'config';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin+Sketch:wght@700&family=Notable&display=swap');
 
 //======= navbar =========
 
@@ -20,11 +21,7 @@ body{
     color: $tertiary-color;
     font-weight: 700;
     letter-spacing: 2px;
-    border-radius: 10px ;
-    -webkit-border-radius: 10px ;
-    -moz-border-radius: 10px ;
-    -ms-border-radius: 10px ;
-    -o-border-radius: 10px ;
+    margin: 4rem 0rem;
 }
 
 // ==== background animation ======
@@ -154,11 +151,12 @@ body{
 }
 
 .sociel{
-    width: 5rem !important;
-    height: 10rem;
+    width: 7rem !important;
+    height: 14rem;
     z-index: +10;
     position: fixed;
     top: 40vh;
+    overflow: hidden;
 
     i{
         transition: 500ms;
@@ -166,9 +164,11 @@ body{
         -moz-transition: 500ms;
         -ms-transition: 500ms;
         -o-transition: 500ms;
-}
+    }
     
     i{
+        position: relative;
+        right: 100rem;
         color: $tertiary-color;
         font-size: 40px;
         margin-bottom: 1rem;
@@ -179,6 +179,7 @@ body{
         }
     }
 }
+
 
 
 nav{
@@ -216,7 +217,7 @@ nav{
 
 .home{
     background-color: $primary-color;
-    height: 90vh;
+    min-height: 85vh;
     width: 100%;
     overflow: hidden;
 
@@ -363,18 +364,16 @@ nav{
 // ======= About section =========
 
 .about{
-    height: 92vh !important;
-    margin-bottom: 5rem ;        
+    margin-top: 5rem;
+    min-height: 92vh !important;
 
     &__p{
-        height: 25rem;
-        width: 30rem;
-        padding: 3rem;
+        padding: 1rem;
         font-size: 20px;
     }
 
     &__grid{
-        display: grid;
+         display: grid;
         grid-template-columns: auto auto auto;
         gap: 1rem;
 
@@ -417,19 +416,19 @@ nav{
     .container{
         width: 90%;
         height: 80%;
-        transform: translate(2% , 20%);
-        -webkit-transform: translate(2% , 20%);
-        -moz-transform: translate(2% , 20%);
-        -ms-transform: translate(2% , 20%);
-        -o-transform: translate(2% , 20%);
-    }
+        transform: translate(0% , 8%);
+        -webkit-transform: translate(0% , 8%);
+        -moz-transform: translate(0% , 8%);
+        -ms-transform: translate(0% , 8%);
+        -o-transform: translate(0% , 8%);
+}
 
     button{
         background-color: transparent   ;
         border-color: transparent;
 
         i{
-            font-size: 20px;
+            font-size: 40px;
         }
     }
 
@@ -443,7 +442,7 @@ nav{
 
 
 .projects{
-    height: 100vh;
+    min-height: 100vh;
 
     &__img{
         position: relative;
@@ -498,8 +497,13 @@ nav{
         -o-transition: .5s;
 }
 
+    &__h{
+        margin-bottom: 2rem;
+        font-family: 'Notable', sans-serif;
+    }
+
     &__cont__p{
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 400;
     }
 
@@ -510,6 +514,15 @@ nav{
         -ms-border-radius: 30px;
         -o-border-radius: 30px;
     }
+
+    &__cpy{
+        position: relative;
+        bottom: -2.5rem;
+        border-top: 1px solid;
+        padding-top: .5rem;
+
+
+    }
 }
 
 
@@ -518,7 +531,7 @@ nav{
 
 .contact{
     width: 100%;
-    height: 80vh;
+    min-height: 100vh;
     background-color: $primary-color;
 
     &__hdr{
@@ -554,5 +567,38 @@ nav{
         -moz-border-radius: 15px;
         -ms-border-radius: 15px;
         -o-border-radius: 15px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about__div__img{
+        display: none;
+    }
+
+    .about__img{
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .home__img{
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .about__grid{
+        grid-template-columns:  auto auto;
+
+    }
+
+    .sociel{
+        right: 0;
+    }
+}
+
+@media (max-width: 370px) {
+    .home__img{
+        height: 10rem;
+        width: 10rem;
     }
 }
