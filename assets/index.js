@@ -4,14 +4,18 @@ window.addEventListener("load" , () => {
     let video = document.querySelector(".projects__demo");
     let demos = document.querySelectorAll(".projects__demo__btn")
     let sociel = document.querySelectorAll(".sociel i");
-    
-console.log(sociel)
+    let vid = document.querySelector("video") 
+    console.log(demos[0].getAttribute('rel'))
     clsBtn.addEventListener("click" , () => {
         video.style.display = "none" ;
     })
 
     demos.forEach(demo => { demo.addEventListener("click" , () =>   {
-            video.style.display = "block" ;
+        var vidName = demo.getAttribute("rel")
+        console.log(vidName)
+        vid.src = `assets/videos/${vidName}.mp4` 
+        video.style.display = "block" ;
+        vid.load();
         })
     })
 
