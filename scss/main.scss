@@ -222,18 +222,24 @@ nav{
     overflow: hidden;
 
     &__img{
+        background-color: #C7C6CE ;
+        background-image: url(../assets/imgs/my-Image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
         z-index: +1;
         overflow: hidden;
         position: relative ;
-        height: 25rem;
-        width: 25rem;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
+        top: 2.5rem ;
+        height: 18rem;
+        width: 20rem !important;
+        border-radius: 100%;
         animation: imgpopup 2200ms ease-in-out;
         -webkit-animation: imgpopup 2200ms ease-in-out;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
 }
 
     &__span{
@@ -283,11 +289,15 @@ nav{
 
         .home__proj__btn{
             position: relative;
+            text-decoration: none;
+            display: grid;
+            align-items: center;
+            justify-content: center;
             width: 12rem ;
             height: 2.5rem;
             background-color: $tertiary-color;
             color: $primary-color;
-            border-color: transparent;
+            border-color: $sub-color !important;
             border-radius: 20px;
             -webkit-border-radius: 20px;
             -moz-border-radius: 20px;
@@ -295,16 +305,21 @@ nav{
             -o-border-radius: 20px;
             animation: popup 2000ms ease-in-out;
             -webkit-animation: popup 2500ms ease-in-out;
-}
+
+        }
         .home__hire__btn{
-            transition: 500ms;
+            display: grid;
+            align-items: center;
+            justify-content: center;
             position: relative;
-            width: 6rem !important;
+            width: 10rem !important;
             height: 2.5rem;
             background-color: $primary-color;
             color: $sub-color;
-            border-top-color: $sub-color;
             margin-left: 1rem;
+            transition: 500ms;
+            text-decoration: none;
+            border: 2px solid $sub-color ;
             border-radius: 20px;
             -webkit-border-radius: 20px;
             -moz-border-radius: 20px;
@@ -373,7 +388,7 @@ nav{
     }
 
     &__grid{
-         display: grid;
+        display: grid;
         grid-template-columns: auto auto auto;
         gap: 1rem;
 
@@ -441,8 +456,32 @@ nav{
 }
 
 
+
+
 .projects{
     min-height: 100vh;
+
+    .hidden{
+        display: none !important;
+    }
+
+    .active{
+        background-color: $tertiary-color !important;
+        border-color: $tertiary-color;
+        color: $primary-color !important;
+    }
+
+    &__tabs{
+        margin:auto;
+        border : none;
+        width: 20rem;
+
+        &__links{
+            margin: 0rem 1rem;
+            color: $sub-color !important;
+            font-size: 18px;
+        }
+    }
 
     &__img{
         position: relative;
@@ -469,22 +508,25 @@ nav{
 
         .projects__icons{
             position: relative;
-            left: 20rem;
-            font-size: 35px;
             display: flex;
             justify-content: space-evenly;
-            transition: 500ms;
-            -webkit-transition: 500ms;
-            -moz-transition: 500ms;
-            -ms-transition: 500ms;
-            -o-transition: 500ms;
+
+            a{
+                text-decoration: none;
+            }
+        }
+
+        .porjects__icon{
+            font-size: 35px;
+        }
+
+        .projects__icons__p{
+           font-size: 14px !important;
+           border: none;
         }
 
         &:hover{
             background: rgba($color: #000000, $alpha: .25);
-            .projects__icons{
-                left: 0;
-            }
         }
 
     }
@@ -503,7 +545,7 @@ nav{
     }
 
     &__cont__p{
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 400;
     }
 
@@ -517,7 +559,7 @@ nav{
 
     &__cpy{
         position: relative;
-        bottom: -2.5rem;
+        bottom: -2rem;
         border-top: 1px solid;
         padding-top: .5rem;
 
@@ -530,6 +572,7 @@ nav{
 // =======CONTACT ME ==========
 
 .contact{
+    margin-top: 12rem;
     width: 100%;
     min-height: 100vh;
     background-color: $primary-color;
@@ -582,13 +625,13 @@ nav{
 
 @media (max-width: 800px) {
     .home__img{
-        height: 12rem;
-        width: 12rem;
+        height: 11rem;
+        width: 12rem !important ;
+        margin: 3rem 0rem;
     }
 
     .about__grid{
         grid-template-columns:  auto auto;
-
     }
 
     .sociel{
