@@ -202,11 +202,12 @@ body {
 }
 
 .sociel {
-  width: 7rem !important;
+  width: 5rem !important;
   height: 14rem;
   z-index: +10;
   position: fixed;
   top: 40vh;
+  right: 0rem !important;
   overflow: hidden;
 }
 
@@ -229,6 +230,73 @@ body {
 
 .sociel i:hover {
   opacity: 1;
+}
+
+.mail__num__container {
+  z-index: +100;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.mail__num__container .mail__num__module {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 30rem;
+  background-color: white;
+  margin: auto;
+  padding-bottom: 3rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.mail__num__container .close__btn {
+  position: relative;
+  left: 12rem;
+  top: 1rem;
+  font-size: 28px;
+}
+
+.mail__num__container .mail__num__head {
+  color: #ffd523;
+  font-weight: 700;
+  margin: -1.2rem auto 2rem  auto !important;
+}
+
+.mail__num__container .info__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0rem 2rem;
+  margin: auto;
+}
+
+.mail__num__container .info__container .mail__num__platform {
+  color: #ffd523;
+}
+
+.mail__num__container .info__container .mail__num__text {
+  color: #595260;
+  margin-top: .5rem;
+}
+
+.mail__num__container .info__container .mail__num__copy {
+  text-decoration: none;
+  position: relative;
+  top: .5rem;
 }
 
 nav {
@@ -797,7 +865,31 @@ nav a:hover {
         grid-template-columns: auto auto;
   }
   .sociel {
-    right: 0;
+    width: 2rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .close__btn {
+    left: 7rem !important;
+  }
+  .info__container {
+    padding: 0rem .5rem !important;
+    margin: 0rem !important;
+  }
+  .mail__num__module {
+    width: 19rem !important;
+  }
+  .mail__num__platform {
+    font-size: 15px !important;
+    margin: 3rem auto !important;
+  }
+  .mail__num__text {
+    font-size: 12px;
+    margin-top: 3rem !important;
+  }
+  .mail__num__copy {
+    top: 2.8rem !important;
   }
 }
 

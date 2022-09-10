@@ -30,6 +30,37 @@
         </div>
     </div>
 
+     <!--========= when clicking on email or whats app icon display this module ===========-->
+
+     <div id="module" class="mail__num__container text-center">
+        <div class="mail__num__module">
+            <i class='bx bxs-x-circle close__btn'></i>
+            <h2 id="" class="mail__num__head">Contact Me</h2>
+            <div class="info__container whatsapp" >
+                <div class="">
+                    <h3 class="mail__num__platform">whatsapp :</p>
+                </div>
+                <div class="">
+                    <p id="myWhatsapp" class="mail__num__text">+963 949 286 962</p>
+                </div>
+                <div class="">
+                    <a id="whatsapp" href="" class="mail__num__copy">copy</a>
+                </div>
+            </div>
+            <div class="info__container gmail">
+                <div class="">
+                    <h3 class="mail__num__platform">Email :</p>
+                </div>
+                <div class="">
+                    <p id="myGmailUrl" class="mail__num__text">abdullahmanafikhi32@gmail.com</p>
+                </div>
+                <div class="">
+                    <a id="gmail" href="#" class="mail__num__copy">copy</a>
+                </div> 
+            </div>
+            <a target="_blank" href="https://mail.google.com/" class="gmail">Go to Gmail</a>
+        </div>
+    </div>
    
     <!--============ NavBar ================-->
 
@@ -62,13 +93,15 @@
     </div>
     <!--========== sociel =============-->
     <div id="sociel" class="container sociel">
-        <div class="row text-end">
-           <a target="_blank" href="https://github.com/abdullah-manafikhi"><i class='bx bxl-github'></i></a>
-           <a href=""><i class='bx bxl-gmail'></i></a>
+        <div class="row text-start">
+           <a class="socie" target="_blank" href="https://github.com/abdullah-manafikhi"><i class='bx bxl-github'></i></a>
+           <a id="gmail__icon" href=""><i class='bx bxl-gmail'></i></a>
            <a target="_blank" href="https://www.facebook.com/abdullah.manafikhi"><i class='bx bxl-facebook-circle'></i></a>
-           <a href=""><i class='bx bxl-whatsapp'></i></a>
+           <a id="whatsapp__icon" href=""><i class='bx bxl-whatsapp'></i></a>
         </div>
     </div>
+
+   
 
       <!--================= HOME =====================-->
 
@@ -101,11 +134,13 @@
             <div class="row text-center">
                 <div class="col-lg-12 text-start ">
                     <p class="about__p">
-                        I'm Abdullah Manafikhi , I am 21 years old , I am studing Mechatronics Engineering I'm Frontend Developer , recently in the past 2 years I spent most of my time learning web things
-                        ,first I learnt diffrent things in web indusrty so I have good background in backend procces , SEO and Cms
-                        , then I focused on frontend development and now I'm pretty good in frontend technologies . <br>
-                        what I like in this field is you never get bored , because you are always learning new things or trying to solve new problems .<br>
-                        I like building e-commerce website , I've built two e-commerce websites the first one is using HTML CSS JS and BOOTSTRAP and the second is using REACT JS , TAILWIND  . I used Firebase for the backend.<br>
+                        I'm Abdullah Manafikhi, I am 21 years old, 
+                        I am studying Mechatronics Engineering I'm Frontend Developer, 
+                        recently in the past 2 years I spent most of my time learning web things, 
+                        first I learned different things in web industry so I have good background in backend process, SEO and Cms
+                        , then I focused on frontend development and now I'm pretty good in frontend technologies. <br>
+                        what I like in this field is you never get bored, because you are always learning new things or trying to solve new problems.<br>
+                        I like building e-commerce website, I've built two e-commerce websites the first one is using HTML CSS JS, and BOOTSTRAP and the second is using REACT JS , TAILWIND. I used Firebase for the backend.<br>
                         Those are the tools that I use : 
                     </p>
                     <div class="row d-grid justify-content-center mt-5">
@@ -164,7 +199,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 d-flex justify-content-center">
+                <div class="col-sm-6 mt-4 mt-sm-0 d-flex justify-content-center">
                     <div class="projects__container text-center d-grid align-content-center">
                         <h2 class="projects__h">Rentrato</h2>
                         <p class="projects__cont__p">Real estate landing page</p>
@@ -239,7 +274,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 d-flex justify-content-center">
+                <div class="col-sm-6 mt-4 mt-sm-0 d-flex justify-content-center">
                     <div class="projects__container animated__project text-center d-grid align-content-center">
                         <h3 class="projects__h">Feedback ui</h3>
                         <p class="projects__cont__p">Simple feedback ui , you can add, edit and delete feedbacks . Built with React Js  </p>
@@ -277,7 +312,7 @@
            <form action="" >
                 <div class="row justify-content-center">
                     <div class="col-sm-8">
-                        <input class="contact__inpt" type="text0"  style="width: 100%;" id="fname" name="firstname" placeholder="Eter Your Email...">
+                        <input class="contact__inpt" type="text0"  style="width: 100%;" id="fname" name="firstname" placeholder="Enter Your Email...">
                     </div>
                </div>
                 <div class="row justify-content-center"> 
