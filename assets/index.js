@@ -7,6 +7,7 @@ window.addEventListener("load" , () => {
     let vid = document.querySelector("video") 
     clsBtn.addEventListener("click" , () => {
         video.style.display = "none" ;
+        vid.pause()
     })
 
     demos.forEach(demo => { demo.addEventListener("click" , () =>   {
